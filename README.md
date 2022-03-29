@@ -12,7 +12,7 @@ Examples of annotated query-passage related pairs in three different domains:
 |  Domain   | Query  | Passage |
 |  ----  | ----  | ---- |
 | E-commerce | 尼康z62 (<font color=Blue>Nikon z62</font>) | <div style="width: 150pt"> Nikon/尼康二代全画幅微单机身Z62 Z72 24-70mm套机  (<font color=Blue>Nikon/Nikon II, full-frame micro-single camera, body Z62 Z72 24-70mm set</font>) |
-| Entertainment vedio  | 海神妈祖 (<font color=Blue>Ma-tsu, Goddess of the Sea</font>) | 海上女神妈祖 (<font color=Blue>Ma-tsu, Goddess of the Sea</font>) |
+| Entertainment video | 海神妈祖 (<font color=Blue>Ma-tsu, Goddess of the Sea</font>) | 海上女神妈祖 (<font color=Blue>Ma-tsu, Goddess of the Sea</font>) |
 | Medical | <div style="width: 150pt"> 大人能把手放在睡觉婴儿胸口吗 (<font color=Blue>Can adults put their hands on the chest of a sleeping baby?</font>) | <div style="width: 150pt"> 大人不能把手放在睡觉>婴儿胸口，对孩子呼吸不好，要注意 (<font color=Blue>Adults should not put their hands on the chest of a sleeping baby as this is not good for the baby's breathing.</font>) |
 
 ## Data Format
