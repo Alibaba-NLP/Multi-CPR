@@ -49,6 +49,16 @@ BERT-reranking results
 |           |          |   MRR@10   |        MRR@10        |  MRR@10 |
 |   DPR-1   |     -    |   0.2704   |        0.2537        |  0.3270 |
 |   DPR-1   |   BERT   |   0.3624   |        0.3772        |  0.3885 |
+  
+## Requirements
+```
+python=3.8
+transformers==4.18.0
+tqdm==4.49.0
+datasets==1.11.0
+torch==1.11.0
+faiss==1.7.0
+```
 
 ## Citing us
 
