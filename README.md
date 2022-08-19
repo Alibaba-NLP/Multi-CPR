@@ -64,12 +64,22 @@ faiss==1.7.0
 
 If you feel the datasets helpful, please cite:
 
-```
-@article{Long2022MultiCPRAM,
-  title={Multi-CPR: A Multi Domain Chinese Dataset for Passage Retrieval},
-  author={Dingkun Long and Qiong Gao and Kuan Zou and Guangwei Xu and Pengjun Xie and Rui Guo and Jianfeng Xu and Guanjun Jiang and Luxi Xing and P. Yang},
-  booktitle = {Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval},
-  series = {SIGIR 22},
-  year={2022}
+```  
+@inproceedings{Long2022MultiCPRAM,
+  author    = {Dingkun Long and
+               Qiong Gao and
+               Kuan Zou and
+               Guangwei Xu and
+               Pengjun Xie and
+               Ruijie Guo and
+               Jian Xu and
+               Guanjun Jiang and
+               Luxi Xing and
+               Ping Yang},
+  title     = {Multi-CPR: {A} Multi Domain Chinese Dataset for Passage Retrieval},
+  booktitle = {{SIGIR}},
+  pages     = {3046--3056},
+  publisher = {{ACM}},
+  year      = {2022}
 }
 ```
