@@ -2,6 +2,9 @@
 
 This repo contains the annotated datasets and expriments implementation introduced in our resource paper in SIGIR2022 Multi-CPR: A Multi Domain Chinese Dataset for Passage Retrieval. [[Paper]](https://arxiv.org/pdf/2203.03367.pdf).
 
+## 📢 What's New
+- 🌟 2023-01: Multiple models fine-tuned with Multi-CPR dataset are open source on the ModelScope platform. [Released Models](#rm1) [开源模型](#rm2)
+
 ## Introduction
 
 Multi-CPR is a multi-domain Chinese dataset for passage retrieval. The dataset is collected from three different domains, including E-commerce, Entertainment video and Medical. Each dataset contains millions of passages and a certain amount of human annotated query-passage related pairs.
@@ -60,7 +63,7 @@ torch==1.11.0
 faiss==1.7.0
 ```
 
-## Released Models
+## <span id="rm1">Released Models</span>
 We have uploaded some checkpoints finetuned with Multi-CPR to [ModelScope](https://modelscope.cn/home) Model hub. It should be noted that the open-source models on ModelScope are fine-tuned based on the ROM or CoROM model rather than the original BERT model. ROM is a pre-trained language model specially designed for dense passage retrieval task. More details about the ROM model, please refer to paper [ROM](https://arxiv.org/abs/2210.15133)
 
 | Model Type 	| Domain     	| Description 	| Link                                                                                                                                             	|
@@ -73,7 +76,7 @@ We have uploaded some checkpoints finetuned with Multi-CPR to [ModelScope](https
 | ReRanking  	| Medical    	| -           	| [nlp_corom_passage-ranking_chinese-base-medical](https://modelscope.cn/models/damo/nlp_corom_passage-ranking_chinese-base-medical/summary) 
 
   
-## 开源模型
+## <span id="rm2">开源模型</span>
 
 基于Multi-CPR数据集训练的预训练语言模型文本表示(召回)模型、语义相关性(精排)模型已逐步通过[ModelScope平台](https://modelscope.cn/home)开源，欢迎大家下载体验。在ModelScope上开源的模型都是基于ROM或者CoROM模型为底座训练的而不是原始的BERT模型，ROM是一个专门针对文本召回任务设计的预训练语言模型，更多关于ROM模型细节可以参考论文[ROM](https://arxiv.org/abs/2210.15133)
 
