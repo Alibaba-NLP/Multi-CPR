@@ -60,22 +60,39 @@ torch==1.11.0
 faiss==1.7.0
 ```
 
+## Released Models
+We have uploaded some checkpoints finetuned with Multi-CPR to [ModelScope](https://modelscope.cn/home) Model hub. It should be noted that the open-source models on ModelScope are fine-tuned based on the ROM or CoROM model rather than the original BERT model. ROM is a pre-trained language model specially designed for dense passage retrieval task. More details about the ROM model, please refer to paper [ROM](https://arxiv.org/abs/2210.15133)
+
+| Model Type 	| Domain     	| Description 	| Link                                                                                                                                             	|
+|------------	|------------	|-------------	|--------------------------------------------------------------------------------------------------------------------------------------------------	|
+| Retrieval  	| General    	| -           	| [nlp_corom_sentence-embedding_chinese-base](https://modelscope.cn/models/damo/nlp_corom_sentence-embedding_chinese-base/summary)                 	|
+| Retrieval  	| E-commerce 	| -           	| [nlp_corom_sentence-embedding_chinese-base-ecom](https://modelscope.cn/models/damo/nlp_corom_sentence-embedding_chinese-base-ecom/summary)       	|
+| Retrieval  	| Medical    	| -           	| [nlp_corom_sentence-embedding_chinese-base-medical](https://modelscope.cn/models/damo/nlp_corom_sentence-embedding_chinese-base-medical/summary) 	|
+| ReRanking  	| General    	| -           	| [nlp_rom_passage-ranking_chinese-base](https://modelscope.cn/models/damo/nlp_rom_passage-ranking_chinese-base/summary)                           	|
+| ReRanking  	| E-commerce 	| -           	| [nlp_corom_passage-ranking_chinese-base-ecom](https://modelscope.cn/models/damo/nlp_corom_passage-ranking_chinese-base-ecom/summary)             	|
+| ReRanking  	| Medical    	| -           	| [nlp_corom_passage-ranking_chinese-base-medical](https://modelscope.cn/models/damo/nlp_corom_passage-ranking_chinese-base-medical/summary) 
+
+  
+## 开源模型
+
+基于Multi-CPR数据集训练的预训练语言模型文本表示(召回)模型、语义相关性(精排)模型已逐步通过[ModelScope平台](https://modelscope.cn/home)开源，欢迎大家下载体验。在ModelScope上开源的模型都是基于ROM或者CoROM模型为底座训练的而不是原始的BERT模型，ROM是一个专门针对文本召回任务设计的预训练语言模型，更多关于ROM模型细节可以参考论文[ROM](https://arxiv.org/abs/2210.15133)
+
+| 模型类别  	| 领域       	| 模型描述                             	| 下载链接                                                                                                                                         	|
+|-----------	|------------	|--------------------------------------	|--------------------------------------------------------------------------------------------------------------------------------------------------	|
+| Retrieval 	| General    	| 中文通用领域文本表示模型(召回阶段)   	| [nlp_corom_sentence-embedding_chinese-base](https://modelscope.cn/models/damo/nlp_corom_sentence-embedding_chinese-base/summary)                 	|
+| Retrieval 	| E-commerce 	| 中文电商领域文本表示模型(召回阶段)   	| [nlp_corom_sentence-embedding_chinese-base-ecom](https://modelscope.cn/models/damo/nlp_corom_sentence-embedding_chinese-base-ecom/summary)       	|
+| Retrieval 	| Medical    	| 中文医疗领域文本表示模型(召回阶段)   	| [nlp_corom_sentence-embedding_chinese-base-medical](https://modelscope.cn/models/damo/nlp_corom_sentence-embedding_chinese-base-medical/summary) 	|
+| ReRanking 	| General    	| 中文通用领域语义相关性模型(精排阶段) 	| [nlp_rom_passage-ranking_chinese-base](https://modelscope.cn/models/damo/nlp_rom_passage-ranking_chinese-base/summary)                           	|
+| ReRanking 	| E-commerce 	| 中文电商领域语义相关性模型(精排阶段) 	| [nlp_corom_passage-ranking_chinese-base-ecom](https://modelscope.cn/models/damo/nlp_corom_passage-ranking_chinese-base-ecom/summary)             	|
+| ReRanking 	| Medical    	| 中文医疗领域语义相关性模型(精排阶段) 	| [nlp_corom_passage-ranking_chinese-base-medical](https://modelscope.cn/models/damo/nlp_corom_passage-ranking_chinese-base-medical/summary)       	|
+  
 ## Citing us
 
 If you feel the datasets helpful, please cite:
 
 ```  
 @inproceedings{Long2022MultiCPRAM,
-  author    = {Dingkun Long and
-               Qiong Gao and
-               Kuan Zou and
-               Guangwei Xu and
-               Pengjun Xie and
-               Ruijie Guo and
-               Jian Xu and
-               Guanjun Jiang and
-               Luxi Xing and
-               Ping Yang},
+  author    = {Dingkun Long and Qiong Gao and Kuan Zou and Guangwei Xu and Pengjun Xie and Ruijie Guo and Jian Xu and Guanjun Jiang and Luxi Xing and Ping Yang},
   title     = {Multi-CPR: {A} Multi Domain Chinese Dataset for Passage Retrieval},
   booktitle = {{SIGIR}},
   pages     = {3046--3056},
